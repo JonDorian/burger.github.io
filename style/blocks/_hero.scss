@@ -1,0 +1,38 @@
+.hero {
+  background: url('/style/img/first/main-background.jpg') center center / cover no-repeat;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero__btn-order {
+  margin-left: 20px;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.72;
+}
+
+.hero__burger-img {
+  margin-left: 20px;
+}
+.hero__content-text {
+  margin-top: 93px;
+  margin-left: 13px;
+}
+
+
+.hero__content-desc {
+  color: #fff;
+  font-family: 'Lifehack';
+  font-weight: 500;
+  font-size: 65px;
+  letter-spacing: -1.63px;
+  line-height: 60px;
+}

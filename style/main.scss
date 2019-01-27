@@ -1,0 +1,21 @@
+//colors
+$black: #2f3234;
+$yellow: #f9b43b;
+$red: #e45028;
+
+// normolize.css
+@import 'normolize';
+
+//layout setup
+@import 'fonts';
+@import 'layout';
+
+//blocks
+@import './blocks/hero';
+@import './blocks/header';
+@import './blocks/btn';
+@import './blocks/title';
+@import './blocks/arrow-down';
+@import './blocks/best';
+@import './blocks/reviews';
+@import './blocks/fixed-menu';

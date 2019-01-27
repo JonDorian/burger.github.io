@@ -1,0 +1,11 @@
+.title {
+  color: $yellow;
+  font-family: 'Gagalin';
+  font-size: 72px;
+  // line-height: 85px;
+  line-height: 0.5;
+  margin-bottom: 45px;
+  &_black {
+    color: $black;
+  }
+}

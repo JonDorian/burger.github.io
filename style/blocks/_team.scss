@@ -1,0 +1,98 @@
+.team {
+  background: url('/style/img/team/bg-team.jpg') center center / cover no-repeat;
+  position: relative;
+}
+
+.team__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  // height: 100%;
+  // display: flex;
+  // justify-content: flex-end; 
+}
+
+.team__content {
+  padding-top: 66px;
+  padding-left: 109px;
+  height: 100%;
+  background: rgba(#343739, 0.9);
+}
+
+.accordeon__item {
+  margin-bottom: 23px;
+}
+
+.accordeon__item:hover {
+
+  .member__info {
+    transition: 0.7s;
+    max-height: 20em;
+  }
+
+  .member__name {
+    color: $yellow;
+
+    &::before {
+      background: url('/style/img/team/triangle-up.svg') center center no-repeat;
+    }
+  }
+
+}
+
+.member__name {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Gagalin';
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: '';
+    width: 9px;
+    height: 7px;
+    background: url('/style/img/team/triangle-down.svg') center center no-repeat;
+    margin-right: 10px;
+  }
+}
+
+
+
+.member__info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+  max-height: 0em;
+}
+
+.member__avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.member__position {
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px
+}
+
+.member__service {
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  width: 208px;
+  line-height: 24.01px;
+}
+

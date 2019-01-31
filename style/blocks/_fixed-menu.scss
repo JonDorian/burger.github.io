@@ -1,7 +1,7 @@
 .fixed-menu {
   position: fixed;
-  top: 93px;
-  right: 175px;
+  top: 90px;
+  right: 172px;
 }
 
 .fixed-menu__link {
@@ -11,7 +11,7 @@
   border-radius: 50%;
   border: 1px solid transparent;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 
   &_active {
     border-color: #fff;

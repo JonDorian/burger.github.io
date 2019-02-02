@@ -1,0 +1,83 @@
+.menu-types {
+  background: url('/style/img/menu/bg-main-menu.jpg')center center/ cover no-repeat;
+  position: relative;
+}
+
+.accordeon-menu__list {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.accordeon-menu__item {
+ display: flex;
+ height: 100%;
+
+ &_active {
+  .accordeon-menu__trigger-text{
+    color: $yellow;   
+  }
+  .accordeon-menu__text {
+    display: block;
+    height: 100%;
+    width: 550px;
+    padding: 60px 35px;
+  }
+ }
+}
+
+.accordeon-menu__trigger {
+  display: block;
+  width: 80px;
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &_vegeterian, &_diet {
+    background-position: right center;
+  } 
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(#000, 0.5);
+  }
+  
+}
+
+
+
+.accordeon-menu__trigger-text {
+  position: absolute;
+  font-family: 'Gagalin';
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  top: 90%;
+  margin-left: 41px;
+}
+
+.accordeon-menu__text {
+  position: relative;
+  font-family: Ubuntu;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  height:100%;
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  background: rgba(#343739, 0.93);  
+}

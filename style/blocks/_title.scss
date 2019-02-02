@@ -5,12 +5,22 @@
   line-height: 1;
   margin-bottom: 27px;
   margin-top: 19px;
+  
   &_black {
     color: $black;
     margin-bottom: 40px;
     margin-top: -57px;
   }
+
   &_team {
     margin-bottom: 40px;
   }
+
+  &_white {
+    color: #fff;
+    margin-top: 0;
+    padding-top: 100px;
+    margin-bottom: 0;
+  }
 }
+

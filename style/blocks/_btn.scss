@@ -8,8 +8,22 @@
   background: $red;
   padding: 8px 15px;
   border-radius: 6px;
+  cursor: pointer;
   
   &_black{
     background: $black;
-  } 
+  }
+  
+  &_delivery {
+    margin-right: 15px;
+  }
+  &_delivery-clear {
+    font-weight: 300;
+    text-transform: none;
+    background: transparent;
+    transition: 0.3s;
+    &:hover {
+      background:$black;
+    }
+  }
 }

@@ -1,0 +1,55 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: url('/style/img/footer/bg-footer.jpg') center center / cover no-repeat;
+
+}
+
+.footer__container {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer__column-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.adress {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.contacts__phone {
+  display: flex;
+  align-items: center;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  font-size: 14px;
+  color:#e45028;
+
+  
+  &::before {
+    content: '';
+    height: 12px;
+    width: 12px;
+    margin-right: 6px;
+    background: url('/style/img/footer/phone.svg') center center no-repeat;
+  }
+}

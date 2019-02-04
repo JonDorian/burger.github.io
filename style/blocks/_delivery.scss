@@ -1,0 +1,161 @@
+.delivery {
+  background: url('/style/img/delivery/bg-delivery.jpg') center center / cover no-repeat;
+}
+
+.delivery-form{
+  display: flex;
+}
+
+.delivery-form__column {
+  margin-right: 20px;
+  width: 50%;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 20px;
+  &_right {
+    margin-bottom: 14px;
+  }
+}
+
+.form__block{
+  margin-right: 20px;
+  flex: 1;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.form__block-title {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.form__block-input {
+  border-radius: 5px;
+  background: #fff;
+  border: 2px solid transparent;
+
+  width: 100%;
+  padding: 5px 10px;
+
+  &:focus {
+    border-color: $yellow;
+    outline: none;
+  }
+}
+
+.form__block-input_textarea {
+  height: 111px;
+  resize: none;
+}
+
+.form__radios {
+  display: flex;
+}
+
+.form__radio {
+  display: flex;
+  margin-right: 20px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.radio__elem {
+  position: absolute;
+  display: none;
+}
+
+.form__radio-fake {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  margin-right: 5px;
+}
+
+.form__radio-fake::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: $red;
+}
+
+.radio__elem:checked + .form__radio-fake::after {
+  width: 7px;
+  height: 7px;
+}
+
+.form__radio-answer {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.delivery__check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.delivery__checkbox-custom {
+  display: flex;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  margin-right: 10px;
+  position: relative;
+}
+
+.delivery__checkbox-text {
+  display: flex;
+  align-items: center;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.delivery__checkbox-disabled {
+  display: none;
+  &:checked + .delivery__checkbox-custom .delivery__checkbox-iconCheck {
+    display: block;
+  }
+}
+
+.delivery__checkbox-iconCheck {
+  display: none;
+  width: 11px;
+  height: 9px;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+}
+
+.delivery__buttons {
+  display: flex;
+}

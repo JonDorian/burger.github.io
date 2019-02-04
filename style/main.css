@@ -228,9 +228,15 @@ table { border-collapse: collapse; border-spacing: 0; }
 .menu__link { color: #fff; font-family: 'Ubuntu'; font-size: 13px; font-weight: 500; text-transform: uppercase; text-decoration: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\000031}}
-.btn { font-family: 'Ubuntu'; font-size: 13px; font-weight: 500; text-transform: uppercase; text-decoration: none; color: #fff; background: #e45028; padding: 8px 15px; border-radius: 6px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000312}}
+.btn { font-family: 'Ubuntu'; font-size: 13px; font-weight: 500; text-transform: uppercase; text-decoration: none; color: #fff; background: #e45028; padding: 8px 15px; border-radius: 6px; cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000313}}
 .btn_black { background: #2f3234; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000317}}
+.btn_delivery { margin-right: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000320}}
+.btn_delivery-clear { font-weight: 300; text-transform: none; background: transparent; -webkit-transition: 0.3s; transition: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000325}}
+.btn_delivery-clear:hover { background: #2f3234; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_title\.scss}line{font-family:\000031}}
 .title { color: #f9b43b; font-family: 'Gagalin'; font-size: 72px; line-height: 1; margin-bottom: 27px; margin-top: 19px; }
@@ -240,6 +246,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 .title_team { margin-bottom: 40px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_title\.scss}line{font-family:\0000319}}
 .title_white { color: #fff; margin-top: 0; padding-top: 100px; margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_title\.scss}line{font-family:\0000326}}
+.title_delivery { margin-top: 0; margin-bottom: 44px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_arrow-down\.scss}line{font-family:\000031}}
 .arrow-down { position: relative; text-align: center; top: 100px; margin-right: 30px; }
@@ -368,5 +376,125 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_menu-types\.scss}line{font-family:\0000370}}
 .accordeon-menu__text { position: relative; font-family: Ubuntu; color: #ffffff; font-size: 14px; font-weight: 300; line-height: 24px; letter-spacing: 0.5px; height: 100%; width: 0px; overflow: hidden; -webkit-transition: 0.3s; transition: 0.3s; background: rgba(52, 55, 57, 0.93); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_map\.scss}line{font-family:\000031}}
+.map { background: url("/style/img/map/bg-map.jpg") center center/cover no-repeat; position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_footer\.scss}line{font-family:\000031}}
+.footer { position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: url("/style/img/footer/bg-footer.jpg") center center/cover no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_footer\.scss}line{font-family:\0000311}}
+.footer__container { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_footer\.scss}line{font-family:\0000319}}
+.footer__column-left { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_footer\.scss}line{font-family:\0000325}}
+.footer__column-right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_footer\.scss}line{font-family:\0000331}}
+.adress { font-family: 'Ubuntu'; font-weight: 300; font-size: 14px; color: #fff; margin-bottom: 6px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_footer\.scss}line{font-family:\0000339}}
+.contacts__phone { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-family: 'Ubuntu'; font-weight: bold; font-size: 14px; color: #e45028; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_footer\.scss}line{font-family:\0000348}}
+.contacts__phone::before { content: ''; height: 12px; width: 12px; margin-right: 6px; background: url("/style/img/footer/phone.svg") center center no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_social\.scss}line{font-family:\000031}}
+.social__list { display: -webkit-box; display: -ms-flexbox; display: flex; text-align: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_social\.scss}line{font-family:\000036}}
+.social__item { display: block; margin-right: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_social\.scss}line{font-family:\0000311}}
+.social__item:last-child { margin-right: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_social\.scss}line{font-family:\0000315}}
+.social__link { display: block; width: 24px; height: 21px; border-radius: 15%; background-position: center center; background-repeat: no-repeat; opacity: 0.3; -webkit-transition: 0.3s; transition: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_social\.scss}line{font-family:\0000324}}
+.social__link:hover { opacity: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_social\.scss}line{font-family:\0000328}}
+.social__link_vk { background-image: url("/style/img/footer/vk_hover.svg"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_social\.scss}line{font-family:\0000332}}
+.social__link_facebook { background-image: url("/style/img/footer/fb-hover.svg"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_social\.scss}line{font-family:\0000336}}
+.social__link_instagram { background-image: url("/style/img/footer/insta-hover.svg"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_social\.scss}line{font-family:\0000340}}
+.social__link_twitter { background-image: url("/style/img/footer/twitter-hover.svg"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\000031}}
+.delivery { background: url("/style/img/delivery/bg-delivery.jpg") center center/cover no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\000035}}
+.delivery-form { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\000039}}
+.delivery-form__column { margin-right: 20px; width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000313}}
+.delivery-form__column:last-child { margin-right: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000318}}
+.form__row { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000321}}
+.form__row_right { margin-bottom: 14px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000326}}
+.form__block { margin-right: 20px; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000330}}
+.form__block:last-child { margin-right: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000335}}
+.form__block-title { font-family: 'Ubuntu'; font-weight: 300; font-size: 14px; color: #fff; margin-bottom: 7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000343}}
+.form__block-input { border-radius: 5px; background: #fff; border: 2px solid transparent; width: 100%; padding: 5px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000351}}
+.form__block-input:focus { border-color: #f9b43b; outline: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000357}}
+.form__block-input_textarea { height: 111px; resize: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000362}}
+.form__radios { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000366}}
+.form__radio { display: -webkit-box; display: -ms-flexbox; display: flex; margin-right: 20px; position: relative; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000372}}
+.form__radio:last-child { margin-right: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000377}}
+.radio__elem { position: absolute; display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000382}}
+.form__radio-fake { width: 15px; height: 15px; border-radius: 50%; background: #fff; position: relative; margin-right: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\0000391}}
+.form__radio-fake::after { content: ''; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 0; height: 0; border-radius: 50%; background: #e45028; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\00003103}}
+.radio__elem:checked + .form__radio-fake::after { width: 7px; height: 7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\00003108}}
+.form__radio-answer { font-family: 'Ubuntu'; font-weight: 300; font-size: 14px; color: #fff; cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\00003116}}
+.delivery__check { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\00003122}}
+.delivery__checkbox-custom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 15px; height: 15px; background-color: #fff; margin-right: 10px; position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\00003132}}
+.delivery__checkbox-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-family: 'Ubuntu'; font-weight: 300; font-size: 14px; color: #fff; cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\00003143}}
+.delivery__checkbox-disabled { display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\00003145}}
+.delivery__checkbox-disabled:checked + .delivery__checkbox-custom .delivery__checkbox-iconCheck { display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\00003150}}
+.delivery__checkbox-iconCheck { display: none; width: 11px; height: 9px; position: absolute; top: 3px; left: 2px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery\.scss}line{font-family:\00003159}}
+.delivery__buttons { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 /*# sourceMappingURL=main.css.map */

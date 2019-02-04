@@ -12,12 +12,15 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section id="one" class="section hero"><!--секция первой страницы-->
+      <section id="one" class="section hero"><!--секция "Hero" страницы-->
         <div class="container hero__container">
           <header class="header">
             <div class="logo">
               <a href="#" class="logo__link">
-                <img src="./style/img/first/logo.png" class="logo__img" alt="Картинка с логотипом">
+                <!-- <img src="./style/img/first/logo.png" class="logo__img" alt="Картинка с логотипом"> -->
+                <svg class="logo-icon">
+                  <use xlink:href="/style/img/sprite/sprite.svg#logo"></use>
+                </svg>
               </a>
             </div>
             <div class="header__buttons">
@@ -58,16 +61,23 @@
               <div class="hero__content-desc">натуральные бургеры</div>
             </div>
           </div>
-          <a href="#" class="arrow-down"><img src="./style/img/first/arrow-down.svg" alt="стрелка вниз" class="arrow-down__img"></a>
+          <a href="#" class="arrow-down">
+            <!-- <img src="./style/img/first/arrow-down.svg" alt="стрелка вниз" class="arrow-down__img"> -->
+            <svg class="arrow-scroll">
+              <use xlink:href="/style/img/sprite/sprite.svg#arrow-scroll"></use>
+            </svg>
+          </a>
         </div>
       </section>
-      <section id="two" class="section section_centered best"><!--секция второй страницы-->
+      <section id="two" class="section section_centered best"><!--секция "Мы лучшие" страницы-->
         <div class="container">
           <div class="title title_black">Мы лучшие</div>
           <ul class="best__list">
             <li class="best__item">
               <div class="best__img">
-                <img src="./style/img/second/meat.svg" alt="Картинка с мясом" class="best__icon">
+                <svg class="meat-icon">
+                  <use xlink:href="/style/img/sprite/sprite.svg#meat"></use>
+                </svg>
               </div>
               <div class="best__desc">
                 <div class="best__desc-title">100% свежее мясо</div>
@@ -79,7 +89,9 @@
             </li>
             <li class="best__item">
               <div class="best__img">
-                <img src="./style/img/second/hand-new.svg" alt="Картинка с рукой" class="best__icon">
+                <svg class="meat-icon">
+                  <use xlink:href="/style/img/sprite/sprite.svg#hand"></use>
+                </svg>
               </div>
               <div class="best__desc">
                 <div class="best__desc-title">Ручная сборка</div>
@@ -92,7 +104,9 @@
             </li>
             <li class="best__item">
               <div class="best__img">
-                <img src="./style/img/second/natural-new.svg" alt="Картинка с листиком" class="best__icon">
+                <svg class="meat-icon">
+                  <use xlink:href="/style/img/sprite/sprite.svg#natural"></use>
+                </svg>
               </div>
               <div class="best__desc">
                 <div class="best__desc-title best__desc-title_last">Натуральные ингридиенты</div>
@@ -109,7 +123,7 @@
         <div class="container">
         </div>
       </section> -->
-      <section id="three" class="section team"><!--секция третьей страницы-->
+      <section id="three" class="section team"><!--секция "Команда" страницы-->
         <div class="container team__container">
           <div class="team__content">
             <div class="title title_team">Команда</div>
@@ -172,7 +186,7 @@
           </div>
         </div>
       </section>
-      <section id="four" class="section menu-types"><!--секция четвертой страницы-->
+      <section id="four" class="section menu-types"><!--секция "Виды меню" страницы-->
         <div class="container menu-types__container">
           <div class="title title_white">Меню</div>
           <div class="accordeon-menu">
@@ -226,7 +240,7 @@
           </div>
         </div>
       </section>
-      <section id="five" class="section reviews"><!--секция пятой страницы-->
+      <section id="five" class="section reviews"><!--секция "Отзывы" страницы-->
         <ul class="reviews__list">
           <li class="reviews__item" style="background-image: url('./style/img/second/avatar/one.jpg')">
             <div class="reviews__item-hover">
@@ -342,7 +356,7 @@
           </li>
         </ul>
       </section>
-      <section id="six" class="section section_centered delivery">
+      <section id="six" class="section section_centered delivery"> <!--cекция "Заказ доставки" страницы-->
         <div class="container">
           <div class="title title_delivery">Закажите доставку</div>
           <form action="#" class="delivery-form">
@@ -405,13 +419,10 @@
                   </div>
                 </label>
               </div>
-                <label class="delivery__check">
-                  <input type="checkbox" class="delivery__checkbox-disabled" value="Не перезванивать">
-                  <div class="delivery__checkbox-custom">
-                    <div class="delivey__checkbox-iconCheck"></div>
-                  </div>
-                  <div class="delivery__checkbox-text">Не перезванивать</div>
-                </label>
+              <div class="form__row">
+                  <input type="checkbox" class="call" id="callback" checked> 
+                  <label class="form__checkbox-title" for="callback">Не перезванивать</label>
+              </div>
               <div class="delivery__buttons">
                 <div class="btn btn_delivery">Заказать</div>
                 <div class="btn btn_delivery-clear">Очистить</div>
@@ -420,27 +431,47 @@
           </form>
         </div>
       </section>
-      <section id="seven" class="section map">
+      <section id="seven" class="section map"> <!--cекция "Карта" страницы-->
         <footer class="footer">
           <div class="container footer__container">
             <div class="footer__column-left">
               <div class="adress">Санкт-Петербург, ул.Бабушкина, д.12/1,15</div>
-              <a href="tel:+78123771377" class="contacts__phone">+7 (812) 377-13-77</a>
+              <a href="tel:+78123771377" class="contacts__phone">
+                <svg class="phone-icon">
+                  <use xlink:href="/style/img/sprite/sprite.svg#phone"></use>
+                </svg>
+                +7 (812) 377-13-77</a>
             </div>
             <div class="footer__column-right">
               <div class="social">
                 <ul class="social__list">
                   <li class="social__item">
-                    <a href="#" class="social__link social__link_vk"></a>
+                    <a href="#" class="social__link">
+                      <svg class="vk-icon">
+                        <use xlink:href="/style/img/sprite/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="social__item">
-                    <a href="#" class="social__link social__link_facebook"></a>
+                    <a href="#" class="social__link">
+                      <svg class="fb-icon">
+                        <use xlink:href="/style/img/sprite/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="social__item">
-                    <a href="#" class="social__link social__link_instagram"></a>
+                    <a href="#" class="social__link">
+                      <svg class="instagram-icon">
+                        <use xlink:href="/style/img/sprite/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="social__item">
-                    <a href="#" class=" social__link social__link_twitter"></a>
+                    <a href="#" class="social__link">
+                      <svg class="twitter-icon">
+                        <use xlink:href="/style/img/sprite/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>

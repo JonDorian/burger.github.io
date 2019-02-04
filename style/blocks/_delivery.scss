@@ -85,19 +85,20 @@
   border-radius: 50%;
   background: #fff;
   position: relative;
-  margin-right: 5px;
-}
+  margin-right: 10px;
 
-.form__radio-fake::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: $red;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: $red;
+    transition: 0.2s;
+  }
 }
 
 .radio__elem:checked + .form__radio-fake::after {
@@ -113,23 +114,16 @@
   cursor: pointer;
 }
 
-.delivery__check {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+.call {
+  display: none;
+
+  &:checked+.form__checkbox-title::after {
+    opacity: 1;
+  }
 }
 
-.delivery__checkbox-custom {
-  display: flex;
-  align-items: center;
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  margin-right: 10px;
-  position: relative;
-}
 
-.delivery__checkbox-text {
+.form__checkbox-title{
   display: flex;
   align-items: center;
   font-family: 'Ubuntu';
@@ -137,23 +131,31 @@
   font-size: 14px;
   color: #fff;
   cursor: pointer;
+  position: relative;
 
-}
-
-.delivery__checkbox-disabled {
-  display: none;
-  &:checked + .delivery__checkbox-custom .delivery__checkbox-iconCheck {
-    display: block;
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin-right: 10px;
   }
-}
 
-.delivery__checkbox-iconCheck {
-  display: none;
-  width: 11px;
-  height: 9px;
-  position: absolute;
-  top: 3px;
-  left: 2px;
+  &::after {
+    content:'';
+    position: absolute;
+    left: 2px;
+    top: 4px;
+    width: 7px;
+    height: 4px;
+    border-radius: 1px;
+    border-left: 4px solid #e45028;
+    border-bottom: 4px solid #e45028;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: 0.3s;
+  }
 }
 
 .delivery__buttons {

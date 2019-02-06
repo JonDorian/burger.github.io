@@ -28,15 +28,15 @@
   .accordeon-menu__text {
     display: block;
     height: 100%;
-    width: 550px;
-    padding: 60px 35px;
+    width: rem(550px);
+    padding: rem(60px) rem(35px);
   }
  }
 }
 
 .accordeon-menu__trigger {
   display: block;
-  width: 80px;
+  width: rem(80px);
   position: relative;
   height: 100%;
   background-size: cover;
@@ -62,7 +62,7 @@
 .accordeon-menu__trigger-text {
   position: absolute;
   font-family: 'Gagalin';
-  font-size: 40px;
+  font-size: rem(40px);
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
@@ -70,19 +70,19 @@
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: 0 0;
   top: 90%;
-  margin-left: 41px;
+  margin-left: rem(41px);
 }
 
 .accordeon-menu__text {
   position: relative;
   font-family: Ubuntu;
   color: #ffffff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.5px;
+  line-height: rem(24px);
+  letter-spacing: rem(0.5px);
   height:100%;
-  width: 0px;
+  width: rem(0px);
   overflow: hidden;
   transition: 0.3s;
   background: rgba(#343739, 0.93);  

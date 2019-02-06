@@ -2,15 +2,30 @@
   box-sizing: border-box;
 }
 
-html,body{
+html {
+height: 100%;
+font-size: 16px;
+
+  @include tablets(){
+    font-size: 14px;
+  }
+
+  @include phones(){
+    font-size: 13px;
+  }
+
+  scroll-behavior: smooth;
+}
+
+body{
   font-family: 'Ubuntu';
   margin: 0;
   line-height: 1.42;
-  font-size: 16px;
+  font-size: rem(16px);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  scroll-behavior: smooth;
+  // height: 100%;?
 }
 
 ul{
@@ -44,12 +59,15 @@ table {
   overflow: hidden;
   min-height: 100%;
   width: 100%;
-  min-width: 940px;
+  // min-width: rem(940px);
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
+  width: 95%;
+  // display: flex;
+  // flex-direction: column; - если что то попробовать, тогда исправить футер
 }
 
 .section {

@@ -1,15 +1,12 @@
 .arrow-down {
-position: relative;
 text-align: center;
-top: 100px;
-margin-right: 30px;
+margin-bottom: rem(36px);
 }
 .arrow-down__img{
 position: absolute;
 }
 
 .arrow-scroll {
-  position: absolute;
-  width: 29px;
-  height: 14px;
+  width: rem(29px);
+  height: rem(14px);
 }

@@ -3,6 +3,13 @@ $black: #2f3234;
 $yellow: #f9b43b;
 $red: #e45028;
 
+//breakpoints 
+$tablets: 768px;
+$phones: 480px;
+
+//media
+@import './media';
+
 // normolize.css
 @import 'normolize';
 
@@ -25,3 +32,4 @@ $red: #e45028;
 @import './blocks/footer';
 @import './blocks/social';
 @import './blocks/delivery';
+@import './blocks/hamburger';

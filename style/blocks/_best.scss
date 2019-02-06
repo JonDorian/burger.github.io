@@ -8,7 +8,7 @@
 
 .best__item {
   flex:1;
-  margin-right: 37px;
+  margin-right: rem(37px);
   text-align: center;
 
   &:last-child {
@@ -17,22 +17,22 @@
 }
 
 .best__img {
-  margin-bottom: 29px;
+  margin-bottom: rem(29px);
 }
 
 .meat-icon {
-  width: 97px;
-  height: 89px;
+  width: rem(97px);
+  height: rem(89px);
 }
 
 .hand-icon {
-  width: 97px;
-  height: 89px;
+  width: rem(97px);
+  height: rem(89px);
 }
 
 .natural-icon {
-  width: 97px;
-  height: 89px;
+  width: rem(97px);
+  height: rem(89px);
 }
 
 .best__desc {
@@ -41,20 +41,20 @@
 .best__desc-title {
   color: $black;
   font-family: 'Lifehack';
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: 500;
-  line-height: 28.14px;
-  letter-spacing: -0.6px;
-  margin-bottom: 10px;
+  line-height: rem(28.14px);
+  letter-spacing: rem(-0.6px);
+  margin-bottom: rem(10px);
   &_last {
-    margin-bottom: 13px;
+    margin-bottom: rem(13px);
   }
 }
 
 .best__desc-text {
   color: $black;
   font-family: 'Ubuntu';
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
   opacity: 0.8;
 }

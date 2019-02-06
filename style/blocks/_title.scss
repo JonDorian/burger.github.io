@@ -1,32 +1,32 @@
 .title {
   color: $yellow;
   font-family: 'Gagalin';
-  font-size: 72px;
+  font-size: rem(72px);
   line-height: 1;
-  margin-bottom: 27px;
-  margin-top: 19px;
-  
+  margin-bottom: rem(27px);
+  margin-top: rem(19px);
+
   &_black {
     color: $black;
-    margin-bottom: 40px;
-    margin-top: -57px;
+    margin-bottom: rem(40px);
+    margin-top: rem(-57px);
   }
 
   &_team {
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
   }
 
   &_white {
     position: absolute;
     color: #fff;
     margin-top: 0;
-    padding-top: 100px;
+    padding-top: rem(100px);
     margin-bottom: 0;
   }
 
   &_delivery {
     margin-top: 0;
-    margin-bottom: 44px;
+    margin-bottom: rem(44px);
   }
 }
 

@@ -3,7 +3,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: rem(60px);
   background: url('/style/img/footer/bg-footer.jpg') center center / cover no-repeat;
 
 }
@@ -31,9 +31,9 @@
 .adress {
   font-family: 'Ubuntu';
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: #fff;
-  margin-bottom: 6px;
+  margin-bottom: rem(6px);
 }
 
 .contacts__phone {
@@ -41,14 +41,14 @@
   align-items: center;
   font-family: 'Ubuntu';
   font-weight: bold;
-  font-size: 14px;
+  font-size: rem(14px);
   color:#e45028;
 }
 
 .phone-icon {
   position: relative;
-  width: 12px;
-  height: 11px;
-  margin-right: 7px;
-  bottom: 1px;
+  width: rem(12px);
+  height: rem(11px);
+  margin-right: rem(7px);
+  bottom: rem(1px);
 }

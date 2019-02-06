@@ -7,46 +7,46 @@
 }
 
 .delivery-form__column {
-  margin-right: 20px;
+  margin-right: rem(20px);
   width: 50%;
 
   &:last-child {
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
 }
 
 .form__row {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   &_right {
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
   }
 }
 
 .form__block{
-  margin-right: 20px;
+  margin-right: rem(20px);
   flex: 1;
 
   &:last-child {
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
 }
 
 .form__block-title {
   font-family: 'Ubuntu';
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: #fff;
-  margin-bottom: 7px;
+  margin-bottom: rem(7px);
 }
 
 .form__block-input {
-  border-radius: 5px;
+  border-radius: rem(5px);
   background: #fff;
-  border: 2px solid transparent;
+  border: rem(2px) solid transparent;
 
   width: 100%;
-  padding: 5px 10px;
+  padding: rem(5px) rem(10px);
 
   &:focus {
     border-color: $yellow;
@@ -55,7 +55,7 @@
 }
 
 .form__block-input_textarea {
-  height: 111px;
+  height: rem(111px);
   resize: none;
 }
 
@@ -65,7 +65,7 @@
 
 .form__radio {
   display: flex;
-  margin-right: 20px;
+  margin-right: rem(20px);
   position: relative;
   align-items: center;
   justify-content: center;
@@ -80,12 +80,12 @@
 }
 
 .form__radio-fake {
-  width: 15px;
-  height: 15px;
+  width: rem(15px);
+  height: rem(15px);
   border-radius: 50%;
   background: #fff;
   position: relative;
-  margin-right: 10px;
+  margin-right: rem(10px);
 
   &::after {
     content: '';
@@ -102,14 +102,14 @@
 }
 
 .radio__elem:checked + .form__radio-fake::after {
-  width: 7px;
-  height: 7px;
+  width: rem(7px);
+  height: rem(7px);
 }
 
 .form__radio-answer {
   font-family: 'Ubuntu';
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: #fff;
   cursor: pointer;
 }
@@ -128,30 +128,30 @@
   align-items: center;
   font-family: 'Ubuntu';
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: #fff;
   cursor: pointer;
   position: relative;
 
   &::before {
     content: '';
-    width: 15px;
-    height: 15px;
+    width: rem(15px);
+    height: rem(15px);
     background-color: #ffffff;
-    border-radius: 2px;
-    margin-right: 10px;
+    border-radius: rem(2px);
+    margin-right: rem(10px);
   }
 
   &::after {
     content:'';
     position: absolute;
-    left: 2px;
-    top: 4px;
-    width: 7px;
-    height: 4px;
-    border-radius: 1px;
-    border-left: 4px solid #e45028;
-    border-bottom: 4px solid #e45028;
+    left: rem(2px);
+    top: rem(4px);
+    width: rem(7px);
+    height: rem(4px);
+    border-radius: rem(1px);
+    border-left: rem(4px) solid #e45028;
+    border-bottom: rem(4px) solid #e45028;
     transform: rotate(-45deg);
     opacity: 0;
     transition: 0.3s;

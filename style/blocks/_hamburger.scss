@@ -1,0 +1,54 @@
+.hamburger .line{
+  width: rem(24px);
+  height: rem(4px);
+  border-radius: rem(2px);
+  background-color: #ecf0f1;
+  display: block;
+  margin: rem(5px) auto;
+  transition: all 0.3s ease-in-out;
+  margin-left: rem(30px);
+  display: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include tablets(){
+    display: block;
+  }
+  
+}
+
+/* CLEARFIX */
+
+// .cf:before,
+// .cf:after {
+//     content: " ";
+//     display: table;
+// }
+
+// .cf:after {
+//     clear: both;
+// }
+
+// .cf {
+//     *zoom: 1;
+// }
+
+#hamburger-1.is-active .line{
+  margin: rem(9px) auto;
+  margin-left: rem(30px);
+}
+
+
+#hamburger-1.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+  transform: translateY(rem(13px)) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+  transform: translateY(rem(-13px)) rotate(-45deg);
+}

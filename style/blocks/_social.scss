@@ -5,18 +5,18 @@
 
 .social__item {
   display: block;
-  margin-right: 20px;
+  margin-right: rem(20px);
 }
 
 .social__item:last-child{
-  margin-right: 0px;
+  margin-right: rem(0px);
 }
 
 .social__link {
   svg {
     fill: #585858;
-    width:20px;
-    height: 20px;
+    width:rem(20px);
+    height: rem(20px);
     transition: 0.3s;      
     &:hover {
       fill: #fff;

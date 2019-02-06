@@ -11,6 +11,10 @@
     width: 71%;
     margin: 0 auto;
   }
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .delivery-form__column {
@@ -43,12 +47,24 @@
   }
 }
 
+.form__block_apartment {
+  @include phones {
+    margin-right: 0;
+  }
+}
+
 .form__block-title {
   font-family: 'Ubuntu';
   font-weight: 300;
   font-size: rem(14px);
   color: #fff;
   margin-bottom: rem(7px);
+}
+
+.form__block_floor {
+  @include phones {
+    display: none;
+  }
 }
 
 .form__block-input {
@@ -72,6 +88,9 @@
 
 .form__radios {
   display: flex;
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .form__radio {
@@ -133,6 +152,9 @@
   }
 }
 
+.form__row_checkbox {
+  
+}
 
 .form__checkbox-title{
   display: flex;

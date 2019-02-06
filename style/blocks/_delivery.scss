@@ -4,11 +4,22 @@
 
 .delivery-form{
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    // padding: rem(0px) rem(116px);
+    width: 71%;
+    margin: 0 auto;
+  }
 }
 
 .delivery-form__column {
   margin-right: rem(20px);
   width: 50%;
+  @include tablets {
+    width: 100%;
+    margin-right: 0;
+  }
 
   &:last-child {
     margin-right: rem(0px);

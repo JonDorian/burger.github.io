@@ -19,7 +19,12 @@
   background: center center / cover no-repeat;
   filter: grayscale(100%);
   position: relative;
-  color: #fff;
+  color: #fff; 
+
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
 
   &:hover {
     .reviews__item-hover {
@@ -39,6 +44,14 @@
   transition: 0.3s;
   opacity: 0;
   transition: opacity 0.3s;
+
+  @include tablets {
+    padding: rem(15px) rem(10px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .reviews__title {
@@ -46,6 +59,10 @@
   font-size: rem(14px);
   font-weight: 400;
   margin-bottom: rem(30px);
+
+  @include tablets {
+    margin-bottom: rem(5px);
+  }
 }
 
 .reviews__text {

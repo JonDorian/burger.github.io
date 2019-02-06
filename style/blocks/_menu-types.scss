@@ -30,6 +30,10 @@
     height: 100%;
     width: rem(550px);
     padding: rem(60px) rem(35px);
+
+    // @include tablets {
+    //   display: none;
+    // }
   }
  }
 }

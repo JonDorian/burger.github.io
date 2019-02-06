@@ -8,17 +8,26 @@
   top: 0;
   bottom: 0;
   right: 0;
-  width: 50%;
-  // height: 100%;
-  // display: flex;
-  // justify-content: flex-end; 
+  left: 50%;
+  background: rgba(#343739, 0.9);
+  @include tablets {
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .team__content {
   padding-top: rem(66px);
   padding-left: rem(109px);
-  height: 100%;
-  background: rgba(#343739, 0.9);
+
+  @include tablets {
+    padding-top: 0;
+    padding-left: 0;
+  }
 }
 
 .accordeon__item {
@@ -42,15 +51,21 @@
 
 }
 
+.accordeon__list {
+  @include tablets {
+    text-align: center;
+  }
+}
+
 .member__name {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Gagalin';
   font-size: rem(14px);
   font-weight: 400;
   color: #fff;
-  display: flex;
-  align-items: center;
   cursor: pointer;
   &::before {
     content: '';
@@ -62,6 +77,11 @@
     transform: rotate(0deg);
     margin-right: rem(10px);
   }
+
+  @include tablets {
+    justify-content: center;
+    font-size: rem(25px);
+  }
 }
 
 
@@ -69,11 +89,17 @@
 .member__info {
   display: flex;
   align-items: center;
-  margin-top: rem(10px);
+  margin-top: rem(13px);
   margin-left: rem(20px);
   flex-shrink: 0;
   overflow: hidden;
   max-height: 0em;
+
+  @include tablets {
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .member__avatar {
@@ -84,6 +110,16 @@
   background-position: center;
   background-size: cover;
   flex-shrink: 0;
+
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.member__desc {
+  @include tablets {
+    margin-top: rem(17px);
+  }
 }
 
 .member__position {
@@ -91,7 +127,12 @@
   font-size: rem(14px);
   font-weight: 700;
   color: #fff;
-  margin-bottom: rem(20px)
+  margin-bottom: rem(20px);
+
+  @include tablets {
+    margin-bottom: rem(17px);
+  }
+  
 }
 
 .member__service {
@@ -101,5 +142,9 @@
   color: #fff;
   width: rem(208px);
   line-height: rem(24.01px);
+
+  @include tablets {
+    width: rem(290px);
+  }
 }
 

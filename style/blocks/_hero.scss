@@ -32,6 +32,10 @@
     width: 91%;
     margin-left: 0;
   }
+
+  @include phones {
+    width: 70%;
+  }
 }
 
 .hero__burger-img {
@@ -67,5 +71,9 @@
    width: 32.5rem;
    margin-right: 0;
     
+  }
+
+  @include phones {
+  font-size: rem(54px);
   }
 }

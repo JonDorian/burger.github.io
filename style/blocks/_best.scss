@@ -4,9 +4,14 @@
 
 .best__list {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .best__item {
+  display: flex;
   flex:1;
   margin-right: rem(37px);
   text-align: center;
@@ -14,10 +19,20 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include phones {
+    flex-direction: row;
+    margin-bottom: rem(50px);
+    margin-right: 0;
+  }
 }
 
 .best__img {
   margin-bottom: rem(29px);
+
+  @include phones {
+    margin-right: rem(25px);
+  }
 }
 
 .meat-icon {
@@ -37,6 +52,10 @@
 
 .best__desc {
   align-items: center;
+
+  @include phones {
+    text-align: left;
+  }
 }
 .best__desc-title {
   color: $black;

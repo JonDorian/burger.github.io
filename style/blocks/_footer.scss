@@ -6,6 +6,10 @@
   height: rem(60px);
   background: url('/style/img/footer/bg-footer.jpg') center center / cover no-repeat;
 
+  @include phones {
+    height: rem(116px);
+  }
+
 }
 
 .footer__container {
@@ -14,6 +18,12 @@
   flex: 1;
   align-items: center;
   justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
 }
 
 .footer__column-left {
@@ -43,6 +53,10 @@
   font-weight: bold;
   font-size: rem(14px);
   color:#e45028;
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .phone-icon {

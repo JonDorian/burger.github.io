@@ -34,6 +34,10 @@
   &_delivery {
     margin-top: 0;
     margin-bottom: rem(44px);
+    @include phones {
+      margin-bottom: rem(32px);
+      margin-top: rem(35px);
+    }
   }
 }
 

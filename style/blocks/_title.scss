@@ -29,6 +29,10 @@
     margin-top: 0;
     padding-top: rem(100px);
     margin-bottom: 0;
+    
+    @include phones {
+      font-size: rem(50px);
+    }
   }
 
   &_delivery {

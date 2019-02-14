@@ -8,16 +8,43 @@
   <link rel="stylesheet" href="./style/main.css">
   <title>Burger</title>
 </head>
-
 <body>
   <div class="wrapper">
     <div class="maincontent">
+      <div class="fullscreen-menu"><!--полноэкранное меню-->
+        <div class="container container__fullscreen">
+        <nav class="fullscreen-nav">
+          <ul class="fullscreen-menu__list">
+           <li class="fullscreen-menu__item">
+             <a href="#" class="fullscreen-menu__link">О нас</a>
+           </li>
+           <li class="fullscreen-menu__item">
+             <a href="#" class="fullscreen-menu__link">Бургеры</a>
+           </li>
+           <li class="fullscreen-menu__item">
+             <a href="#" class="fullscreen-menu__link">Команда</a>
+           </li>
+           <li class="fullscreen-menu__item">
+             <a href="#" class="fullscreen-menu__link">Меню</a>
+           </li>
+           <li class="fullscreen-menu__item">
+             <a href="#" class="fullscreen-menu__link">Отзывы</a>
+           </li>
+           <li class="fullscreen-menu__item">
+             <a href="#" class="fullscreen-menu__link">Как мы работаем</a>
+           </li>
+           <li class="fullscreen-menu__item">
+             <a href="#" class="fullscreen-menu__link">Контакты</a>
+           </li>
+         </ul>
+        </nav>
+        </div>
+      </div>
       <section id="one" class="section hero"><!--секция "Hero" страницы-->
         <div class="container hero__container">
           <header class="header">
             <div class="logo">
               <a href="#" class="logo__link">
-                <!-- <img src="./style/img/first/logo.png" class="logo__img" alt="Картинка с логотипом"> -->
                 <svg class="logo-icon">
                   <use xlink:href="/style/img/sprite/sprite.svg#logo"></use>
                 </svg>
@@ -123,10 +150,59 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section empty">
-        <div class="container">
+      <section class="section section_centered burgers">
+        <div class="container burgers__container">
+          <ul class="burgers__list">
+            <a href="#" class="arrow-left">
+              <img src="./style/img/burgers/arrow-scroll-left.png" alt="" class="arrow-left__img">
+            </a>
+            <li class="burgers__item">
+              <div class="burgers-type">
+                <div class="consist">
+                  <svg class="consist__svg">
+                    <use xlink:href="/style/img/sprite/sprite.svg#dark-burger"></use>
+                  </svg>
+                  <div class="consist__title">Состав</div>
+                  <ul class="consist__list">
+                    <li class="consist__item"></li>
+                    <li class="consist__item"></li>
+                    <li class="consist__item"></li>
+                    <li class="consist__item"></li>
+                    <li class="consist__item"></li>
+                    <li class="consist__item"></li>
+                  </ul>
+                </div>
+                <div class="burgers-image">
+                  <img src="./style/img/burgers/dark-burger.png" alt="Картинка бургеоа с бифштексом" class="burgers-image-img">
+                </div>
+                <div class="calories">
+                  <svg class="calories__svg">
+                    <use xlink:href="/style/img/sprite/sprite.svg#calories"></use>
+                  </svg>
+                  <div class="calories__number">1200</div>
+                  <div class="calories__text">ккал</div>
+                </div>
+              </div>
+              <div class="burgers-desc">
+                <div class="burgers-desc__title">Dark beef<br>burger</div>
+                <div class="burgers-desc__text">Ваш старый добрый знакомый, с рубленым
+                  бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                  двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                  экзотического соуса чураско.
+                </div>
+                <div class="burgers__cost">
+                  <div class="burgers__cost-value">500</div>
+                  <div class="burgers__cost-currency">рублей</div>
+                  <div class="btn btn_burgers">Заказать</div>
+                </div>
+              </div>
+            </li>
+            <a href="#" class="arrow-right">
+              <img src="./style/img/burgers/arrow-scroll-right.png" alt="" class="arrow-right__img">
+            </a>
+          </ul>
         </div>
-      </section> -->
+      </section>
       <section id="three" class="section team"><!--секция "Команда" страницы-->
         <div class="container team__container">
           <div class="team__content">
@@ -524,6 +600,8 @@
   </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script src="/js/index.js"></script>
+  <script src="/js/acco-team.js"></script>
+  <script src="/js/fullscreen-menu.js"></script>
 </body>
 
 </html>

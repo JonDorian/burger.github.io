@@ -37,8 +37,11 @@
 .accordeon__item.accordeon__item_active{
 
   .member__info {
-    transition: 0.7s;
-    max-height: 20em;
+    height: rem(120px);
+
+    @include tablets {
+      height: 13.5rem;
+    }
   }
 
   .member__name {
@@ -76,6 +79,7 @@
     border-left: rem(5px) solid transparent;
     transform: rotate(0deg);
     margin-right: rem(10px);
+    transition: 0.3s;
   }
 
   @include tablets {
@@ -93,7 +97,8 @@
   margin-left: rem(20px);
   flex-shrink: 0;
   overflow: hidden;
-  max-height: 0em;
+  height: rem(0px);
+  transition: height 0.3s;
 
   @include tablets {
     margin-left: 0;

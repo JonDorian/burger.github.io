@@ -20,6 +20,7 @@
 .accordeon-menu__item {
  display: flex;
  height: 100%;
+ cursor: pointer;
 
  &_active {
   .accordeon-menu__trigger-text{
@@ -40,10 +41,6 @@
       width: 11.375rem;
       padding: rem(10px) rem(3px);
     }
-
-    // @include tablets {
-    //   display: none;
-    // }
   }
  }
 }

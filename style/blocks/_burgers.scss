@@ -36,42 +36,7 @@
   }
 }
 
-.consist {
-  position: absolute;
-  top: rem(-25px);
-  width: rem(90px);
-  height: rem(90px);
-  padding: rem(14px) rem(22px);
-  background: #f08c33;
-  border-radius: rem(5px);
-  cursor: pointer;
-  transition: 0.3s;
-  &:hover {
-    background: $red;
-  }
 
-  @include tablets {
-    top: rem(-62px);
-    left: rem(37px);
-  }
-
-  @include phones {
-    top: -76px;
-    left: -26px;
-  }
-}
-
-.consist__svg{
-  width: rem(46px);
-  height: rem(44px);
-}
-
-.consist__title {
-  color: #ffffff;
-  font-family: 'Gagalin';
-  font-size: rem(14px);
-  font-weight: 400;
-}
 
 .calories {
   position: absolute;

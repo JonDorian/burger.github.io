@@ -1,0 +1,122 @@
+.consist {
+  position: absolute;
+  top: rem(-25px);
+  width: rem(90px);
+  height: rem(90px);
+  padding: rem(14px) rem(22px);
+  background: #f08c33;
+  border-radius: rem(5px);
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background: $red;
+    .consist__list{
+      width: rem(270px);
+      height: rem(332px);
+      padding: rem(18px) rem(20px) rem(21px) rem(26px);
+
+      @include tablets{
+        width: rem(321px);
+      }
+    }
+
+  }
+
+  @include tablets {
+    top: rem(-62px);
+    left: rem(37px);
+  }
+
+  @include phones {
+    top: rem(-76px);
+    left: rem(-26px);
+  }
+}
+
+.consist__svg{
+  width: rem(46px);
+  height: rem(44px);
+}
+
+.consist__svg-close {
+  overflow: hidden;
+  width: 0;
+  height:0;
+
+  @include tablets {
+    width: rem(20px);
+    height: rem(20px);
+  }
+
+}
+
+.consist__title {
+  color: #ffffff;
+  font-family: 'Gagalin';
+  font-size: rem(14px);
+  font-weight: 400;
+}
+
+.consist__list {
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: rem(5px);
+  position: absolute;
+  top: 0px;
+  left: rem(90px);
+  overflow: hidden;
+  width: 0;
+  transition: 0.2s;
+
+  @include tablets {
+    left: rem(90px);
+  }
+}
+
+.consist__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(13px);
+}
+
+.consist__left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.consist__right {
+  width: 28%;
+  text-align: right;
+  height: rem(37px);
+}
+
+.consist__center {
+  width: 100%;
+
+  @include tablets {
+    width: 10%;
+  }
+}
+
+.consist__svg-small {
+  width: rem(38px);
+  height: rem(38px);
+  margin-right: rem(28px);
+}
+
+.consist__desc {
+  color: #2f3234;
+  font-family: 'Ubuntu';
+  font-size: rem(14px);
+  font-weight: 500;
+}
+
+.consist__gramms {
+  color: #2f3234;
+  font-family: 'Ubuntu';
+  font-size: rem(14px);
+  font-weight: 300;
+  width: 100%;
+  text-align: right;
+}

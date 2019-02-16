@@ -18,6 +18,10 @@
       @include tablets{
         width: rem(321px);
       }
+
+      @include phones {
+        width: 16.0625rem;
+      }
     }
 
   }

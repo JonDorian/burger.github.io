@@ -734,48 +734,50 @@ table { border-collapse: collapse; border-spacing: 0; }
 .consist:hover .consist__list { width: 16.875rem; height: 20.75rem; padding: 1.125rem 1.25rem 1.3125rem 1.625rem; }
 @media screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000313}}
   .consist:hover .consist__list { width: 20.0625rem; } }
+@media screen and (max-width: 480px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000313}}
+  .consist:hover .consist__list { width: 16.0625rem; } }
 @media screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\000031}}
   .consist { top: -3.875rem; left: 2.3125rem; } }
 @media screen and (max-width: 480px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\000031}}
   .consist { top: -4.75rem; left: -1.625rem; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000340}}
 .consist__svg { width: 2.875rem; height: 2.75rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000345}}
 .consist__svg-close { overflow: hidden; width: 0; height: 0; }
-@media screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000341}}
+@media screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000345}}
   .consist__svg-close { width: 1.25rem; height: 1.25rem; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000357}}
 .consist__title { color: #ffffff; font-family: 'Gagalin'; font-size: 0.875rem; font-weight: 400; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000364}}
 .consist__list { background-color: #fff; opacity: 0.9; border-radius: 0.3125rem; position: absolute; top: 0px; left: 5.625rem; overflow: hidden; width: 0; -webkit-transition: 0.2s; transition: 0.2s; }
-@media screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000360}}
+@media screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000364}}
   .consist__list { left: 5.625rem; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000380}}
 .consist__item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0.8125rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000386}}
 .consist__left { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000392}}
 .consist__right { width: 28%; text-align: right; height: 2.3125rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000398}}
 .consist__center { width: 100%; }
-@media screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000394}}
+@media screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\0000398}}
   .consist__center { width: 10%; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\00003106}}
 .consist__svg-small { width: 2.375rem; height: 2.375rem; margin-right: 1.75rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\00003112}}
 .consist__desc { color: #2f3234; font-family: 'Ubuntu'; font-size: 0.875rem; font-weight: 500; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_consist\.scss}line{font-family:\00003119}}
 .consist__gramms { color: #2f3234; font-family: 'Ubuntu'; font-size: 0.875rem; font-weight: 300; width: 100%; text-align: right; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_fullscreen-menu\.scss}line{font-family:\000033}}

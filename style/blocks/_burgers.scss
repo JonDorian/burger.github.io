@@ -4,6 +4,12 @@
   position: relative;
 }
 
+.container.burgers__container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 .arrow-left {
   margin-right: rem(17px);
 }
@@ -21,16 +27,21 @@
   }
 }
 
+// .slider {
+//   display: flex;
+//   width: 940px;
+//   // overflow: hidden;
+// }
 .burgers__list {
   display: flex;
   align-items: center;
+  // overflow: hidden;
 }
 
 .burgers__item {
   display: flex;
   align-items: center;
   position: relative;
-
   @include tablets {
     flex-direction: column;
   }

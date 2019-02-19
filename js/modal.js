@@ -1,59 +1,31 @@
-const templateBtn = document.querySelectorAll('.reviews__btn-phones');
-const template = document.querySelector('#modal-template').innerHTML;
-const modal = createModal();
+const templateBtn = document.querySelectorAll(".btn_review");
 
-for (const item of templateBtn) {
-    item.addEventListener('click', e=>{
+templateBtn.forEach(el =>
+  el.addEventListener("click", function(e) {
     e.preventDefault();
-    
-    const reviewsName = document.querySelector('.reviews__title').textContent;
-    console.log(reviewsName);
-    const reviewsComment = document.querySelector('.reviews__text').textContent;
-    console.log(reviewsComment);
-    // const popupTitle = document.querySelector('.popup__title');
-    // console.log(popupTitle);
-    const popupText = document.querySelector('.popup__text');
+    const popupContent = document.querySelector(".overlay");
+    const parent = e.target.parentNode;
+    const parentTitle = parent.parentNode.querySelector(".reviews__title").innerHTML;
+    const parentText = parent.parentNode.querySelector(".reviews__text").innerHTML;
 
-    modal.setContent('fdsfsdwwwEEEEE');
-    modal.open();
-    
-  });
-}
+    popupContent.querySelector(".popup__title").innerHTML = parentTitle;
+    popupContent.querySelector(".popup__text").innerHTML = parentText;
 
+    popupContent.classList.add("active");
+    document.body.classList.add("body-fixed");
 
-function createModal(){
-  const container = document.createElement('div');
-  container.className = 'popup';
-  container.innerHTML = template;
+    popupContent.addEventListener('click', e=>{
+      if(e.target==popupContent){
+        popupContent.classList.remove("active");
+        document.body.classList.remove("body-fixed");
+      }
+    });
 
-  const contentBlock = container.querySelector('.popup__content');
-  const popupTitle = document.querySelector('.popup__title');
-  console.log(popupTitle);
-
-  const closeModal = container.querySelector('.popup__close');
-  closeModal.addEventListener('click', e=>{
-    e.preventDefault();
-    document.body.removeChild(container);
-  });
-
-  const overlayClose = container.querySelector('.overlay');
-  overlayClose.addEventListener('click', e=>{
-    if(e.target==overlayClose){
-      closeModal.click();
-    }
+    const closeModal = document.querySelector('.popup__close');
+    closeModal.addEventListener('click', e=>{
+      e.preventDefault();
+      popupContent.classList.remove("active");
+      document.body.classList.remove("body-fixed");
+    });
   })
-
-  
-
-  return {
-    open(){
-      document.body.appendChild(container);
-    },
-    close(){
-      closeModal.click();
-    },
-    setContent(content){
-      contentBlock.innerHTML = content;
-    }
-  };
-};
+);

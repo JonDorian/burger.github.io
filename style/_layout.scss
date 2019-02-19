@@ -25,7 +25,6 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  // height: 100%;?
 }
 
 .body-fixed {
@@ -63,15 +62,12 @@ table {
   overflow: hidden;
   min-height: 100%;
   width: 100%;
-  // min-width: rem(940px);
 }
 
 .container {
   max-width: 940px;
   margin: 0 auto;
   width: 95%;
-  // display: flex;
-  // flex-direction: column; - если что то попробовать, тогда исправить футер
 }
 
 .section {

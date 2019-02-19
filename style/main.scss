@@ -8,6 +8,9 @@ $red: #e45028;
 $tablets: 768px;
 $phones: 480px;
 
+// owl-carousel
+@import "./blocks/owl.carousel.scss";
+
 //media
 @import './media';
 
@@ -37,5 +40,4 @@ $phones: 480px;
 @import './blocks/burgers';
 @import './blocks/consist';
 @import './blocks/fullscreen-menu';
-// @import './blocks/owl.carousel.scss';
 @import './blocks/modal';

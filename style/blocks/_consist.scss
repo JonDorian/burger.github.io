@@ -1,6 +1,6 @@
 .consist {
   position: absolute;
-  top: rem(-25px);
+  top: rem(0px);
   width: rem(90px);
   height: rem(90px);
   padding: rem(14px) rem(22px);
@@ -27,13 +27,13 @@
   }
 
   @include tablets {
-    top: rem(-62px);
+    top: rem(0px);
     left: rem(37px);
   }
 
   @include phones {
-    top: rem(-76px);
-    left: rem(-26px);
+    top: 0rem;
+    left: 0;
   }
 }
 

@@ -22,6 +22,10 @@
   color: $black;
   position: relative;
   padding: rem(30px) rem(33px) rem(27px) rem(19px);
+
+  @include phones {
+    width: 95%;
+  }
 }
 
 .popup__title {

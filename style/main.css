@@ -379,12 +379,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000313}}
 .btn_black { background: #2f3234; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000317}}
-.btn_delivery { margin-right: 0.9375rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000320}}
-.btn_delivery-clear { font-weight: 300; text-transform: none; background: transparent; -webkit-transition: 0.3s; transition: 0.3s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000325}}
+.btn_delivery { margin-right: 0.9375rem; border: none; outline: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000323}}
+.btn_delivery-modal { margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000327}}
+.btn_delivery-clear { font-weight: 300; text-transform: none; background: transparent; -webkit-transition: 0.3s; transition: 0.3s; border: none; outline: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000334}}
 .btn_delivery-clear:hover { background: #2f3234; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_btn\.scss}line{font-family:\0000339}}
 .btn_burgers { bottom: 7px; position: relative; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_title\.scss}line{font-family:\000031}}
@@ -948,5 +950,16 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_modal\.scss}line{font-family:\0000353}}
 .popup__svg-close { width: 0.9375rem; height: 0.9375rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery-modal\.scss}line{font-family:\000031}}
+.delivery-modal { background-color: rgba(47, 50, 52, 0.99); display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery-modal\.scss}line{font-family:\000035}}
+.delivery-modal.active { display: -webkit-box; display: -ms-flexbox; display: flex; position: fixed; z-index: 10; top: 0; left: 0; bottom: 0; right: 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery-modal\.scss}line{font-family:\0000318}}
+.delivery-modal__content { border-radius: 0.3125rem; background: #fff; color: #2f3234; padding: 20px 20px; text-align: center; position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_delivery-modal\.scss}line{font-family:\0000327}}
+.delivery-modal__text { font-family: 'Ubuntu'; font-size: 0.875rem; font-weight: 300; line-height: 1.5rem; margin-bottom: 10px; }
 
 /*# sourceMappingURL=main.css.map */

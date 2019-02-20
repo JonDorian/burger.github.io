@@ -16,12 +16,21 @@
   
   &_delivery {
     margin-right: rem(15px);
+    border: none;
+    outline: none;
   }
+
+  &_delivery-modal{
+    margin-right: 0;
+  }
+  
   &_delivery-clear {
     font-weight: 300;
     text-transform: none;
     background: transparent;
     transition: 0.3s;
+    border: none;
+    outline: none;
     &:hover {
       background:$black;
     }
@@ -32,4 +41,5 @@
     position: relative;
   }
 }
+
 

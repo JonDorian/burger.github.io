@@ -76,7 +76,7 @@
                   </li>
                 </ul>
               </nav>
-              <a href="#order" class="btn hero__btn-order">Заказать</a><!--добавить якорь на вкладку доставки-->
+              <a href="#six" class="btn hero__btn-order">Заказать</a><!--добавить якорь на вкладку доставки-->
               <div class="hamburger" id="hamburger-1">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -152,7 +152,7 @@
       </section>
       <section class="section section_centered burgers"><!--Секция "Бургеры"-->
         <div class="container burgers__container">
-          <button href="#" class="slider-button slider-button_prev">
+          <button class="slider-button slider-button_prev">
             <img src="./style/img/burgers/arrow-scroll-left.png" alt="" class="arrow-left__img">
           </button>
           <div class="slider">
@@ -492,7 +492,7 @@
               </li>
             </ul>
           </div>
-          <button href="#" class="slider-button slider-button_next">
+          <button class="slider-button slider-button_next">
             <img src="./style/img/burgers/arrow-scroll-right.png" alt="" class="arrow-right__img">
           </button>
         </div>
@@ -755,40 +755,40 @@
       <section id="six" class="section section_centered delivery"><!--cекция "Заказ доставки"-->
         <div class="container">
           <div class="title title_delivery">Закажите доставку</div>
-          <form action="#" class="delivery-form">
+          <form class="delivery-form" id="order">
             <div class="delivery-form__column">
               <div class="form__row">
                 <label class="form__block">
                   <p class="form__block-title">Имя</p>
-                  <input type="text" class="form__block-input">
+                  <input type="text" class="form__block-input" name="name" required>
                 </label>
                 <label class="form__block">
                   <div class="form__block-title">Телефон</div>
-                  <input type="text" class="form__block-input">
+                  <input type="text" class="form__block-input" name="phone" required>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <p class="form__block-title">Улица</p>
-                  <input type="text" class="form__block-input">
+                  <input type="text" class="form__block-input" name="street" required>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__block-title">Дом</div>
-                  <input type="text" class="form__block-input">
+                  <input type="text" class="form__block-input" name="house-number" required>
                 </label>
                 <label class="form__block">
                   <div class="form__block-title">Корпус</div>
-                  <input type="text" class="form__block-input">
+                  <input type="text" class="form__block-input" name="corps">
                 </label>
                 <label class="form__block form__block_apartment">
                   <div class="form__block-title">Квартира</div>
-                  <input type="text" class="form__block-input">
+                  <input type="text" class="form__block-input" name="apartment" required>
                 </label>
                 <label class="form__block form__block_floor">
                   <div class="form__block-title">Этаж</div>
-                  <input type="text" class="form__block-input">
+                  <input type="text" class="form__block-input" name="floor">
                 </label>
               </div>
             </div>
@@ -796,7 +796,7 @@
               <div class="form__row form__row_right">
                 <label class="form__block">
                   <p class="form__block-title">Комментарий</p>
-                  <textarea class="form__block-input form__block-input_textarea"></textarea>
+                  <textarea class="form__block-input form__block-input_textarea" name="comment" required></textarea>
                 </label>
               </div>
               <div class="form__row">
@@ -816,12 +816,12 @@
                 </label>
               </div>
               <div class="form__row form__row_checkbox">
-                <input type="checkbox" class="call" id="callback" checked>
+                <input type="checkbox" class="call" id="callback" checked name="call-back">
                 <label class="form__checkbox-title" for="callback">Не перезванивать</label>
               </div>
               <div class="delivery__buttons">
-                <div class="btn btn_delivery">Заказать</div>
-                <div class="btn btn_delivery-clear">Очистить</div>
+                <button type="submit" class="btn btn_delivery" id="send-btn">Заказать</button>
+                <button type="reset" class="btn btn_delivery-clear">Очистить</button>
               </div>
             </div>
           </form>
@@ -889,6 +889,12 @@
         <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
       </ul>
     </nav>
+    <div class="delivery-modal">
+      <div class="delivery-modal__content">
+        <p class="delivery-modal__text"></p>
+        <button class="btn btn_delivery btn_delivery-modal" id="send-btn">Закрыть</button>
+      </div>
+    </div>
     <div class="overlay">
       <div class="popup__container">
         <a href="#" class="popup__close">
@@ -912,6 +918,7 @@
   <script src="/js/slider.js"></script>
   <script src="/js/modal.js"></script>
   <script src="/js/consist.js"></script>
+  <script src="/js/delivery-modal.js"></script>
 </body>
 
 </html>

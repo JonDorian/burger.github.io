@@ -2,7 +2,7 @@ const myForm = document.querySelector('#order');
 const sendBtn = document.querySelector('#send-btn');
 const deliveryModal = document.querySelector('.delivery-modal');
 
-sendBtn.addEventListener('click', e=>{
+myForm.onsubmit = function(e){
   e.preventDefault();
 
   const formData = new FormData(myForm);
@@ -49,4 +49,4 @@ sendBtn.addEventListener('click', e=>{
       body.classList.remove('body-fixed');
     });    
   });
-});
+};

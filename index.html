@@ -827,7 +827,8 @@
           </form>
         </div>
       </section>
-      <section id="seven" class="section map"><!--cекция "Карта" страницы-->
+      <section id="seven" class="section map"><!--cекция "Карта"-->
+        <div id="myMap"></div>
       </section>
       <footer class="footer">
           <div class="container footer__container">
@@ -889,13 +890,13 @@
         <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
       </ul>
     </nav>
-    <div class="delivery-modal">
+    <div class="delivery-modal"><!--модальное окно заказа доставки-->
       <div class="delivery-modal__content">
         <p class="delivery-modal__text"></p>
         <button class="btn btn_delivery btn_delivery-modal" id="send-btn">Закрыть</button>
       </div>
     </div>
-    <div class="overlay">
+    <div class="overlay"><!--модальное окно отзывов-->
       <div class="popup__container">
         <a href="#" class="popup__close">
           <svg class="popup__svg-close">
@@ -920,6 +921,8 @@
   <script src="/js/modal.js"></script>
   <script src="/js/consist.js"></script>
   <script src="/js/delivery-modal.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="/js/map.js"></script>
 </body>
 
 </html>

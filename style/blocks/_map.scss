@@ -1,5 +1,10 @@
 .map {
-  background: url('/style/img/map/bg-map.jpg')center center/ cover no-repeat;
-  position: relative;
+  // background: url('/style/img/map/bg-map.jpg')center center/ cover no-repeat;
+  // position: relative;
   height: calc(100vh - rem(60px));
+}
+
+#myMap {
+  height: 100%;
+  width: 100%;
 }

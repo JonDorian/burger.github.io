@@ -1,16 +1,21 @@
 ymaps.ready(init);
-
+// let windowSize = document.querySelector('#myMap');
 let myMap, myPlacemark, myPlacemark1;
 function init(){  // Создание карты.    
   myMap = new ymaps.Map("myMap", {
     center: [59.939095, 30.315868],
     zoom: 11
-    
-    // controls: ['smallMapDefaultSet']
-    // autoFitToViewport: 'always'
     });
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      myMap.behaviors.disable("drag");
+    };
+    
+  // if(windowSize.clientWidth<=768){
+  //   myMap.behaviors.disable("drag");
+  // }
+
   myMap.behaviors.disable("scrollZoom");
-  myMap.behaviors.disable("drag");
   (myPlacemark = new ymaps.Placemark(
     [59.917015, 30.494070],
     {

@@ -1,12 +1,12 @@
 const sections = $(".section");
 const display = $(".maincontent");
-let inscroll = false;
+let inScroll = false;
 
 const performTransition = sectionEq => {
 
-  if(inscroll) return;
+  if(inScroll) return;
 
-    inscroll = true;
+    inScroll = true;
 
     const position = sectionEq * -100 + "%";
 
@@ -21,7 +21,7 @@ const performTransition = sectionEq => {
     });
 
     setTimeout(()=>{
-      inscroll = false;
+      inScroll = false;
     }, 1000 + 300); //продолжительность транзишна + 300мс - продолжительность инерции
 };
 
@@ -37,9 +37,8 @@ const scrollToSection = direction =>{
   if(direction === "prev" && prevSection.length){
     performTransition(prevSection.index());
   };
-
-  
 };
+
 
 $(".wrapper").on("wheel", e=>{
   const deltaY = e.originalEvent.deltaY;
@@ -54,5 +53,4 @@ $(".wrapper").on("wheel", e=>{
     // scroll to prev
     scrollToSection("prev");
   };
-  
 });

@@ -19,7 +19,7 @@ function init(){  // Создание карты.
   (myPlacemark = new ymaps.Placemark(
     [59.917015, 30.494070],
     {
-      hintContent: "Burgers",
+      hintContent: "Mr.Burger",
       balloonContent: "улица Подвойского, 35к1"
     },
     {
@@ -32,7 +32,7 @@ function init(){  // Создание карты.
   (myPlacemark1 = new ymaps.Placemark(
     [59.981243, 30.299128],
     {
-      hintContent: "Burgers",
+      hintContent: "Mr.Burger",
       balloonContent: "Каменноостровский проспект, 68"
     },
     {
@@ -45,7 +45,7 @@ function init(){  // Создание карты.
   (myPlacemark2 = new ymaps.Placemark(
     [59.946651, 30.386553],
     {
-      hintContent: "Burgers",
+      hintContent: "Mr.Burger",
       balloonContent: "Одесская улица, 2"
     },
     {
@@ -58,7 +58,7 @@ function init(){  // Создание карты.
   (myPlacemark3 = new ymaps.Placemark(
     [59.892428, 30.316974],
     {
-      hintContent: "Burgers",
+      hintContent: "Mr.Burger",
       balloonContent: "Московский проспект, 99Б"
     },
     {

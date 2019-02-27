@@ -87,6 +87,10 @@ table {
     min-height: initial;
   }
 
+  @include phones {
+    height: 100%;
+  }
+
   &_centered {
     .title {
       width: 100%;

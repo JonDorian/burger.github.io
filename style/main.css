@@ -308,9 +308,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 .section { height: 100vh; min-height: 650px; }
 @media screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/_layout\.scss}line{font-family:\0000382}}
   .section { min-height: initial; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/_layout\.scss}line{font-family:\0000391}}
-.section_centered .title { width: 100%; text-align: center; }
+@media screen and (max-width: 480px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/_layout\.scss}line{font-family:\0000382}}
+  .section { height: 100%; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/_layout\.scss}line{font-family:\0000395}}
+.section_centered .title { width: 100%; text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/_layout\.scss}line{font-family:\0000399}}
 .section_centered .container { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_hero\.scss}line{font-family:\000031}}
@@ -986,5 +988,4 @@ table { border-collapse: collapse; border-spacing: 0; }
   #yt-player { width: 95%; } }
 @media screen and (max-width: 480px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_video\.scss}line{font-family:\0000311}}
   #yt-player { height: 15.875rem; } }
-
 /*# sourceMappingURL=main.css.map */

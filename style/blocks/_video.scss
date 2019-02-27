@@ -2,4 +2,21 @@
   background: url('/style/img/video/video_bg.jpg')center center/ cover no-repeat;
   display: flex;
   align-items: center;
+  
+  & .container{
+    align-items: center;
+  }
+}
+
+#yt-player{
+  width: rem(660px);
+  height: rem(405px);
+
+  @include tablets {
+    width: 95%;
+  }
+
+  @include phones{
+    height: rem(254px);
+  }
 }

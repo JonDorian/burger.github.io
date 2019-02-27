@@ -12,3 +12,16 @@ elem.addEventListener('click', function() {
 });
 
 
+const fullScreenLink = document.querySelectorAll('.fullscreen-menu__link');
+
+for(const y of fullScreenLink){
+  y.addEventListener('click', e=>{
+    const elem1 = document.querySelector('.fullscreen-menu');
+    const elem3 = document.querySelector('body');
+  
+    elem1.classList.remove('fullscreen-menu_active');
+    elem3.classList.remove('body-fixed');
+    elem.classList.remove('hamburger_active');
+  
+  });
+}

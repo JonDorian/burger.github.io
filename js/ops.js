@@ -2,6 +2,9 @@ const sections = $(".section");
 const display = $(".maincontent");
 let inScroll = false;
 
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
 const switchOnePageScroll = OPSIndex =>{
   $(".fixed-menu__item")
     .eq(OPSIndex)
@@ -60,7 +63,7 @@ const scrollToSection = direction =>{
 };
 
 
-$(".section").on("wheel", e=>{
+$(".wrapper").on("wheel", e=>{
   const deltaY = e.originalEvent.deltaY;
   console.log(deltaY);
 
@@ -73,6 +76,10 @@ $(".section").on("wheel", e=>{
     // scroll to prev
     scrollToSection("prev");
   };
+});
+
+$(".wrapper").on("touchmove", e=> {
+  e.preventDefault();
 });
 
 $(document).on("keydown", e => {
@@ -92,10 +99,13 @@ $('[data-scroll-to]').on('click', e=>{
   performTransition(target);
 });
 
-$(window).swipe({
-  swipe: function(event, direction){
-    const nextOrPrev = direction === "up" ? "next" : "prev";
+if(isMobile){
+  $(window).swipe({
+    swipe: function(event, direction){
+      const nextOrPrev = direction === "up" ? "next" : "prev";
+  
+      scrollToSection(nextOrPrev);
+    }
+  });
+}
 
-    scrollToSection(nextOrPrev);
-  }
-});

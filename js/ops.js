@@ -32,7 +32,7 @@ const performTransition = sectionEq => {
     setTimeout(()=>{
       inScroll = false;
       switchOnePageScroll(sectionEq);
-    }, 1000 + 300); //продолжительность транзишна + 300мс - продолжительность инерции
+    }, 1000); //продолжительность транзишна + 300мс - продолжительность инерции
 };
 
 $('[data-scroll-to]').on('click', e => {
@@ -90,4 +90,12 @@ $('[data-scroll-to]').on('click', e=>{
 
   const target = $(e.currentTarget).attr('data-scroll-to');
   performTransition(target);
+});
+
+$(window).swipe({
+  swipe: function(event, direction){
+    const nextOrPrev = direction === "up" ? "next" : "prev";
+
+    scrollToSection(nextOrPrev);
+  }
 });

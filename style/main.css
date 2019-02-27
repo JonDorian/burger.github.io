@@ -623,13 +623,13 @@ table { border-collapse: collapse; border-spacing: 0; }
   .accordeon-menu__text { line-height: 1.25rem; } }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_map\.scss}line{font-family:\000031}}
-.map { height: calc(100vh - 60px); }
+.map { position: relative; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_map\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_map\.scss}line{font-family:\000038}}
 #myMap { height: 100%; width: 100%; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_footer\.scss}line{font-family:\000031}}
-.footer { position: absolute; left: 0; right: 0; height: 3.75rem; background: url("/style/img/footer/bg-footer.jpg") center center/cover no-repeat; }
+.footer { position: absolute; bottom: 0; left: 0; right: 0; height: 3.75rem; background: url("/style/img/footer/bg-footer.jpg") center center/cover no-repeat; }
 @media screen and (max-width: 480px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Pride\/Desktop\/StudyLoft\/StageTwo\/HomeWorkOneNew\/style\/blocks\/_footer\.scss}line{font-family:\000031}}
   .footer { height: 7.25rem; } }
 
